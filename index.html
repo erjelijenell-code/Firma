@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO On-Page -->
+    <title>Firma vyv | Consultoría de Abogacía y Asesoría Jurídica en Facatativá</title>
+    <meta name="description" content="Firma vyv ofrece asesoría jurídica y consultoría legal transparente y profesional en Facatativá, Colombia. Protegemos sus derechos con ética y experiencia.">
+    <meta name="keywords" content="abogados Facatativá, asesoría jurídica, consultoría legal, firma vyv, servicios legales Colombia">
+    <link rel="canonical" href="index.html">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO Off-Page / Open Graph -->
+    <meta property="og:title" content="Firma vyv | Asesoría Jurídica Profesional">
+    <meta property="og:description" content="Consultoría legal transparente y ética en Facatativá. Solicite la evaluación de su caso hoy mismo.">
+    <meta property="og:type" content="website">
+    
+    <style>
+        /* Variables y Reset */
+        :root {
+            --primary-color: #0f172a; /* Azul oscuro corporativo */
+            --secondary-color: #b45309; /* Dorado/Ocre oscuro */
+            --bg-light: #f8fafc;
+            --text-dark: #334155;
+            --text-light: #f1f5f9;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header y Navegación */
+        header {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .header-contact {
+            font-weight: 600;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Botones */
+        .btn {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #92400e;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--text-light);
+        }
+
+        /* Secciones Generales */
+        .section {
+            padding: 80px 5%;
+        }
+
+        .bg-white {
+            background-color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        /* Grillas */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tarjetas (Cards) */
+        .card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: left;
+            border-top: 4px solid var(--secondary-color);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        /* Información Corporativa y Formulario */
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .info-panel, .form-panel {
+            flex: 1;
+            min-width: 300px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-list strong {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        /* Formulario */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .legal-links {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .header-contact { display: none; }
+            .content-wrapper { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Firma <span>vyv</span></a>
+        <a href="tel:+573110987867" class="header-contact">
+            📞 311 098 7867
+        </a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Asesoría Jurídica y Consultoría de Abogacía</h1>
+            <p>Protegemos sus intereses y derechos con un enfoque ético, transparente y fundamentado en el rigor legal. Permítanos analizar su situación para brindarle el mejor camino a seguir.</p>
+            <a href="#contacto" class="btn">Agende su Evaluación Legal Hoy</a>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="section bg-white">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Pilares de Trabajo</h2>
+                <p class="section-subtitle">Lo que nos define y garantiza un servicio profesional</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Ética y Transparencia</h3>
+                    <p>Hablamos con la verdad sobre las posibilidades reales de su caso. No prometemos resultados imposibles, garantizamos trabajo honesto y riguroso.</p>
+                </div>
+                <div class="card">
+                    <h3>Atención Personalizada</h3>
+                    <p>Entendemos que cada situación es única. Analizamos los detalles específicos de su requerimiento para diseñar una estrategia legal a su medida.</p>
+                </div>
+                <div class="card">
+                    <h3>Confidencialidad Absoluta</h3>
+                    <p>Su información está protegida. Operamos bajo el más estricto secreto profesional para salvaguardar su integridad, patrimonio e identidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios / Propuesta de Valor -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Áreas de Consultoría</h2>
+                <p class="section-subtitle">Servicios jurídicos enfocados en la resolución de conflictos y prevención</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="border-top-color: var(--primary-color);">
+                    <h3 style="color: var(--secondary-color);">Consultoría Preventiva</h3>
+                    <p>Asesoramiento legal enfocado en evitar litigios futuros mediante la correcta estructuración de contratos, acuerdos y cumplimiento normativo.</p>
+                </div>
+                <div class="card" style="border-top-color: var(--primary-color);">
+                    <h3 style="color: var(--secondary-color);">Representación Legal</h3>
+                    <p>Acompañamiento jurídico profesional en procesos civiles, comerciales y familiares, velando siempre por el debido proceso.</p>
+                </div>
+                <div class="card" style="border-top-color: var(--primary-color);">
+                    <h3 style="color: var(--secondary-color);">Gestión de Trámites</h3>
+                    <p>Agilización y acompañamiento en procedimientos notariales, conciliaciones extrajudiciales y respuesta a requerimientos administrativos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prueba Social / Compromiso -->
+        <section class="section bg-white" style="text-align: center; padding: 60px 5%; background-color: #f1f5f9;">
+            <h2 class="section-title" style="font-size: 1.8rem;">Nuestro Compromiso Institucional</h2>
+            <p style="max-width: 800px; margin: 20px auto; font-size: 1.1rem; color: #475569;">
+                "En Firma vyv medimos nuestro éxito a través de la tranquilidad que brindamos a quienes confían en nosotros. Nos enorgullece mantener un historial de gestiones legales basadas en el estudio profundo de la ley y el respeto absoluto por nuestros clientes."
+            </p>
+        </section>
+
+        <!-- Contacto e Información -->
+        <section class="section" id="contacto">
+            <div class="section-header">
+                <h2 class="section-title">Solicite Asesoría Legal</h2>
+                <p class="section-subtitle">Déjenos sus datos y nos comunicaremos para coordinar una consulta</p>
+            </div>
+            
+            <div class="content-wrapper">
+                <!-- Información de Transparencia -->
+                <div class="info-panel">
+                    <h3 style="margin-bottom: 25px; color: var(--primary-color); border-bottom: 2px solid var(--secondary-color); padding-bottom: 10px;">Información de la Firma</h3>
+                    <ul class="info-list">
+                        <li><strong>Razón Social / Responsable Legal:</strong> <span>SIRLEY ANDREA ABLIC PINEDA DELGADILLO</span></li>
+                        <li><strong>Nombre Comercial:</strong> <span>Firma vyv</span></li>
+                        <li><strong>Dirección de Notificaciones:</strong> <span>Cl. 1c Este #08-3, Facatativá, Colombia</span></li>
+                        <li><strong>Teléfono de Contacto:</strong> <span>311 098 7867</span></li>
+                        <li><strong>Correo Electrónico:</strong> <span>erjelijenell@gmail.com</span></li>
+                        <li><strong>Horario de Atención:</strong> <span>Lunes a Domingo: 8:00 am a 5:00 pm</span></li>
+                    </ul>
+                </div>
+
+                <!-- Formulario -->
+                <div class="form-panel">
+                    <h3 style="margin-bottom: 25px; color: var(--primary-color);">Formulario de Contacto</h3>
+                    <form id="leadForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono / Celular *</label>
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 311 000 0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Breve descripción de su requerimiento *</label>
+                            <textarea id="asunto" name="asunto" rows="4" required placeholder="Escriba aquí un breve resumen de su consulta legal..."></textarea>
+                        </div>
+                        <div style="margin-bottom: 20px; font-size: 0.85rem; color: #64748b;">
+                            <input type="checkbox" id="privacidad" required style="margin-right: 8px;">
+                            <label for="privacidad" style="display: inline; font-weight: normal; color: #475569;">Acepto la <a href="politica-de-privacidad.html" style="color: var(--secondary-color);">Política de Privacidad</a> y el tratamiento de mis datos.</label>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Solicitar Contacto Legal</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Firma vyv. Representada por SIRLEY ANDREA ABLIC PINEDA DELGADILLO. Todos los derechos reservados.</p>
+        <div class="legal-links">
+            <a href="politica-de-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+        </div>
+    </footer>
+
+    <!-- Script de validación (SEO Técnico / UX) -->
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulación de envío exitoso sin redirecciones, manteniendo al usuario en la página.
+            alert('Su solicitud ha sido recibida correctamente por Firma vyv. Un asesor legal se pondrá en contacto con usted a la brevedad dentro de nuestro horario de atención.');
+            this.reset();
+        });
+    </script>
+
+    <!-- SEO Técnico: Schema.org para Servicios Legales -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Firma vyv",
+      "legalName": "SIRLEY ANDREA ABLIC PINEDA DELGADILLO",
+      "description": "Firma jurídica y consultoría de abogacía en Facatativá, Colombia.",
+      "url": "https://firmavyv.com.co", 
+      "telephone": "+573110987867",
+      "email": "erjelijenell@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 1c Este #08-3",
+        "addressLocality": "Facatativá",
+        "addressCountry": "CO"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+
+</body>
+</html>
